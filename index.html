@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1f6f3a">
+  <title>Raphaels Minigolf</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="hole-info">Loch 1</div>
+    <div id="strokes">Schläge: 0</div>
+  </header>
+
+  <main>
+    <canvas id="game"></canvas>
+  </main>
+
+  <p id="hint">Zieh vom Ball weg, um zu zielen. Loslassen = Schlag!</p>
+
+  <div id="overlay" class="hidden">
+    <div class="card">
+      <h1 id="overlay-title"></h1>
+      <p id="overlay-text"></p>
+      <button id="overlay-button"></button>
+    </div>
+  </div>
+
+  <script src="holes.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
